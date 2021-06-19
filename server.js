@@ -179,7 +179,11 @@ app.use(function(req,res){
     console.log("Listening on port 5000")
 })
 
-app.listen(5000, ()=> {
+let port=5000||process.env.PORT
+
+
+app.listen(port, ()=> {
     console.log("Listening on port 5000")
     
 })
+
