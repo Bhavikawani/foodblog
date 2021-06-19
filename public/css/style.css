@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2.5rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* _________HERO CONTENT______________ */
+.hero{
+    background-image: url(../assets/images/cover11.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-content{
+    color: #000;
+    height: 55rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.main-header{
+    height: 5rem;
+    font-size: 1.8rem;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 10rem;
+    height: 10rem;
+}
+
+.nav-list a, .nav-items-right{
+    color: #fff; 
+}
+.nav-link{
+    font-size:0.5cm;
+}
+.bx{
+    margin-top: 9px;
+    margin-left: 5px;
+}
+.main-nav{
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list li{
+    display: inline-block;
+}
+
+.mobile-toggle{
+    /* color: #000; */
+    font-size: 3rem;
+    cursor: pointer;
+    display: flex;
+    margin-left: 1.5rem;
+}
+
+.title{
+    font-family: kalam;
+}
+
+.primary-title{
+    font-size: 8rem;
+    color: white;
+    text-shadow: 2px 2px #ff0095;
+}
+
+.hero-description{
+    font-size: 1.8rem;
+    color: white;
+    background-color: #ff0095;
+}
+
+/* _______text________ */
+.sweet h1{
+    color: #000;
+    font-family: kalam;
+    text-shadow: 2px 2px #fcff3a;
+    font-size: 4rem;
+}
+
+.intro h1 {
+    color: #000;
+    font-family: kalam;
+    text-shadow: 2px 2px #ff761b;
+    font-size: 4rem;
+}
+
+
+
+/* ___________CARDS_____________ */
+
+  img {
+    height: 45rem;
+  }
+  .overlay {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: #fff;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .overlay:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.178);
+  }
+
+/* ____________footer___________ */
+.footer{
+    padding: 8rem 4rem 6.4rem 4rem;
+    background-color: rgb(245, 245, 245);
+}
+
+.tertiary-title{
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px #ff0095;
+}
+
+.infobox{
+    width: 100%;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.socialmedia{
+    padding-bottom: 5.6rem;
+}
+
+.socialmedia i{
+    font-size: 2.4rem;
+    color: #ff0095;
+
+}
+
+.list {
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+}
+
+.list:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer-title{
+    color: #62b3ff;
+    font-family: kalam;
+    font-size: 1.5rem;
+}
+
+
+.footer-nav{
+    padding-bottom: 4rem;
+    width: 100%;
+    height: 100%;
+}
+
+/* _____________RESPONSIVE___________________ */
+
+@media(min-width:320px){
+    .nav-list{
+        display: none;
+    }
+}
+
+@media(min-width:768px){
+    .footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .infobox{
+        padding-right: 1.5rem;
+    }
+    .footer-nav{
+        width: 100%;
+    }
+    
+    .socialmedia a{
+        display: inline-flexbox;
+    }
+    
+    .section1{
+        width: 50%;
+    }
+    }
+    
+    @media(min-width:320px){
+    
+    .infobox{
+        width: 100%;
+    }
+    
+    .section1{
+        display: inline-block;
+        vertical-align: top;
+        padding-bottom: 4rem;
+        width: 48%;
+    }
+    
+    }
+
+    
+@media(min-width: 1024px){
+
+    
+    .nav-list{
+        display: flex;
+    }
+    
+    .nav-list a{
+     color: #fff;
+     font-size: 1.6rem;
+     margin: 0 2rem;
+    }
+    
+    .nav-list a:hover{
+        text-decoration: underline;
+    }
+    
+    .footer-nav{
+        display: flex;
+    }
+    
+    .infobox{
+        padding-left: 5rem;
+    }
+    }
