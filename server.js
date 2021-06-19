@@ -176,6 +176,7 @@ function checkAuthentication(req, res, next){
 
 app.use(function(req,res){
     res.send("Page Not Found")
+    console.log("Listening on port 5000")
 })
 
 app.listen(5000, ()=> {
